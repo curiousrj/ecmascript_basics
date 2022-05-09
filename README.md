@@ -18,3 +18,35 @@ in a function, in strict mode this is undefined</br>
 methods like call(), apply(), and bind() can refer this to any object</br>
 with bind() method one object can borrow a method from another object</br>
 </br>
+arrow function -</br>
+functionName = parameter => body;</br>
+functionName = () => body;</br>
+in arrow function this inherits parent this</br>
+const person = {</br>
+    talk() {</br>
+        let self = this;</br>
+        setTimeout(() => {</br>
+            console.log("this", this);</br>
+        }, 1000);</br>
+    }</br>
+};</br>
+person.talk();</br>
+</br>
+destructuring -</br>
+const person = {</br>
+    name: "Steve Roger",</br>
+    age: 35,</br>
+};</br>
+const {name: personName, age: personAge} = person;</br>
+console.log(personName,personAge);</br>
+</br>
+spread operator -</br>
+const places1 = ["Kolkata", "Bengaluru"];</br></br>
+const places2 = ["Chennai", "Delhi"];</br>
+const places = [...places1, ...places2];</br>
+console.log(places);</br>
+</br>
+const personName = {name: "John"};</br>
+const personAge = {age: 35};</br>
+const person = {...personName, ...personAge};</br>
+console.log(person);</br>
