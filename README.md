@@ -62,3 +62,27 @@ const personAge = {age: 35};</br>
 const person = {...personName, ...personAge};</br>
 console.log(person);</br>
 </br>
+class & constructor</br>
+class Person {</br>
+    constructor(name) {</br>
+        this.name = name;</br>
+        function run() {</br>
+            console.log(`${name} is Running`);</br>
+        }</br>
+        run();</br>
+    }</br>
+}</br>
+const person = new Person("Rijaul");</br>
+</br>
+modules -</br>
+named export -</br>
+export const name = "Joe";</br>
+at bottom</br>
+export {name, age};</br>
+</br>
+derfault export -</br>
+export default function running() {</br>
+console.log("Running");</br>
+};</br>
+at bottom</br>
+export default running;</br>
