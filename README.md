@@ -50,3 +50,14 @@ const personName = {name: "John"};</br>
 const personAge = {age: 35};</br>
 const person = {...personName, ...personAge};</br>
 console.log(person);</br>
+</br>
+map() method -</br>
+creates a new array from calling a function for every array element</br>
+const names  = [ "Rohit", "Rahul" ];</br>
+const copiedNames = names.map((name)=> name);</br>
+console.log(copiedNames);</br>
+</br>
+back-ticks -</br>
+defines string with more easy and useful way</br>
+const id = {name: "Rijaul Sk", age: 22};</br>
+console.log(`Hi I'm "${id.name}" and I'm "${id.age}"`);</br>
