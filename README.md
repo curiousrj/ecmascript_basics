@@ -97,3 +97,13 @@ console.log("Running");</br>
 at bottom</br>
 export default running;</br>
 </br>
+ternary operator -</br>
+from this</br>
+if (authenticated) {</br>
+  renderApp();</br>
+} else {</br>
+  renderLogin();</br>
+}</br>
+to this</br>
+authenticated ? renderApp() : renderLogin();</br>
+</br>
