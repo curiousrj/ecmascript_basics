@@ -62,7 +62,7 @@ const personAge = {age: 35};</br>
 const person = {...personName, ...personAge};</br>
 console.log(person);</br>
 </br>
-class & constructor</br>
+class, constructor & inheritance</br>
 class Name {</br>
     constructor(name) {</br>
         this.name = name;</br>
