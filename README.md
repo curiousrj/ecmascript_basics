@@ -63,16 +63,26 @@ const person = {...personName, ...personAge};</br>
 console.log(person);</br>
 </br>
 class & constructor</br>
-class Person {</br>
+class Name {</br>
     constructor(name) {</br>
         this.name = name;</br>
-        function run() {</br>
-            console.log(`${name} is Running`);</br>
-        }</br>
-        run();</br>
+    }</br>
+    show() {</br>
+        return this.name;</br>
     }</br>
 }</br>
-const person = new Person("Rijaul");</br>
+class Age extends Name {</br>
+    constructor(name, age) {</br>
+        super(name);</br>
+        this.age = age;</br>
+    }</br>
+    show(){</br>
+        const name = super.show();</br>
+        console.log(`Hi, my name is ${name}, and I am ${this.age}`);</br>
+    }</br>
+}</br>
+const person = new Age("Varun", 27);</br>
+person.show();</br>
 </br>
 modules -</br>
 named export -</br>
